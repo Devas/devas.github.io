@@ -18,6 +18,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
 
@@ -33,6 +37,9 @@
         }
     }
     </style>
+
+    <!-- CAPTCHA -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
 </head>
 
@@ -101,10 +108,10 @@
         <div class="row">
             <div class="col-lg-8 offset-md-2">
                 <h2>Skills</h2>
-                <p>Java, C++, C#, Python<br>
-                Git, Windows, Linux (CentOS), Spring (basics), HTML and CSS<br>
+                <p>Java, C++, SQL C#, Python<br>
+                Git, Spring (basics), HTML and CSS<br>
                 OOP, Design patterns<br>
-                IntelliJ, Eclipse, Visual Studio<br>
+                Windows, Linux (CentOS), IntelliJ, Eclipse, Visual Studio<br>
                 English (B2), German (A2)<br> 
             </div>
         </div>
@@ -171,7 +178,7 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="md-form">
-                                    <div class="g-recaptcha" data-sitekey="6LeTnxkTAAAAAN9QEuDZRpn90WwKk_R1TRW_g-JC" data-callback="correctCaptcha"></div>
+                                    <div class="g-recaptcha" data-sitekey="6LcuRB0UAAAAAHZVeM3VjvVtkFJ-hn655ZtJRoFY" data-callback="correctCaptcha"></div>
                                 </div>
                             </div>
                             <div class="col-lg-5 col-xs-12 text-xs-center">
@@ -207,6 +214,14 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
+
+    <!-- Captcha -->
+    <script>
+        var correctCaptcha = function(response) {
+            if(response.length!=0){
+                $('button').prop('disabled', false);
+            }};
+    </script>
 
 </body>
 
