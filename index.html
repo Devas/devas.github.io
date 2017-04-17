@@ -23,7 +23,7 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Custom styles for this template -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
 
     <!-- Temporary navbar container fix -->
     <style>
@@ -39,7 +39,7 @@
     </style>
 
     <!-- CAPTCHA -->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 
 </head>
 
@@ -130,8 +130,8 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+    <!-- Contact Section 1 -->
+    <section id="contact-text" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 offset-md-2">
                 <h2>Contact</h2>
@@ -145,8 +145,8 @@
         </div>
     </section>
 
-    <!-- New Contact Section -->
-    <section class="contact" id="nav-contact">
+    <!-- Contact Section 2 -->
+    <section id="contact" class="contact">
         <div class="container">
             <div class="row">
                 <form action="https://formspree.io/azieba255@gmail.com" method="POST" class="col-md-7">
@@ -155,34 +155,35 @@
                             <div class="col-md-12">
                                 <div class="md-form">
                                     <i class="fa fa-user prefix"></i>
+                                    <label for="name-field">Your name</label>
                                     <input type="text" name="name" id="name-field" class="form-control validate" required="true">
-                                    <label for="name-field">What's your name?</label>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="md-form">
                                     <i class="fa fa-envelope prefix"></i>
-                                    <input type="email" name="email" id="email-field" class="form-control validate" required="true">
                                     <label for="email-field" data-error="Correct!" data-success="Incorrect!">Your email</label>
+                                    <input type="email" name="email" id="email-field" class="form-control validate" required="true">
                                 </div>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="md-form">
                                     <i class="fa fa-comment prefix"></i>
-                                    <textarea type="text" name="message" id="textarea-field" class="md-textarea" required="true"></textarea>
-                                    <label for="textarea-field">Message:</label>
+                                    <label for="textarea-field">Your message</label>
+                                    <div>
+                                        <textarea type="text" name="message" id="textarea-field" class="md-textarea" required="true"></textarea>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
+                            <!-- <div class="col-md-12">
                                 <div class="md-form">
                                     <div class="g-recaptcha" data-sitekey="6LdHSB0UAAAAANHcWhHmm2uu6PeHp75MUkBOPC3z" data-callback="correctCaptcha"></div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-lg-5 col-xs-12 text-xs-center">
-                                <button type="submit" name="_next" value="thanks.html" class="btn btn-primary btn-lg btn-block" disabled><i class="fa fa-pencil"></i>  Send</button>
+                                <button type="submit" name="_next" value="thanks.html" class="btn btn-default btn-lg" enabled><i class="fa fa-pencil"></i>  Send</button>
                             </div>
                         </div>
                     </div>
@@ -216,12 +217,12 @@
     <script src="js/grayscale.min.js"></script>
 
     <!-- Captcha -->
-    <script>
+    <!-- <script>
         var correctCaptcha = function(response) {
             if(response.length!=0){
                 $('button').prop('disabled', false);
             }};
-    </script>
+    </script> -->
 
 </body>
 
