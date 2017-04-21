@@ -27,19 +27,16 @@
 
     <!-- Temporary navbar container fix -->
     <style>
-    .navbar-toggler {
-        z-index: 1;
-    }
-    
-    @media (max-width: 576px) {
-        nav > .container {
-            width: 100%;
+        .navbar-toggler {
+            z-index: 1;
         }
-    }
-    </style>
 
-    <!-- CAPTCHA -->
-    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+        @media (max-width: 576px) {
+            nav > .container {
+                width: 100%;
+            }
+        }
+    </style>
 
 </head>
 
@@ -94,136 +91,128 @@
             <div class="col-lg-8 offset-md-2">
                 <h2>About me</h2>
                 <p>I am ambitious passionate Java programmer.<br>
-                I love technology and I love programming.<br>
-                I'm the guy who wants to code all day then continue programming at night.<br>
-                I'm passionate about Clean Code.<br> 
-                I'm always keen to learn new things - currently it's Spring framework which is great.<br>
-                I am ready to join your team as intern or junior Java developer.
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 offset-md-2">
-                <h2>Skills</h2>
-                <p>Java, C++, SQL C#, Python<br>
-                Git, Spring (basics), HTML and CSS<br>
-                OOP, Design patterns<br>
-                Windows, Linux (CentOS), IntelliJ, Eclipse, Visual Studio<br>
-                English (B2), German (A2)<br> 
-            </div>
-        </div>
-    </section>
-
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 offset-md-2">
-                    <h2>Download my projects</h2>
-                    <p>You can download my 3D graphics engine built with Java and LWJGL</p>
-                    <a href="https://github.com/devas/devengine" class="btn btn-default btn-lg">Visit Download Page</a>
+                    I love technology and I love programming.<br>
+                    I'm the guy who wants to code all day then continue programming at night.<br>
+                    I'm passionate about Clean Code.<br> 
+                    I'm always keen to learn new things - now I try to master Spring framework.<br>
+                    I am ready to join your team as junior Java developer.<br><br>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section 1 -->
-    <section id="contact-text" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 offset-md-2">
-                <h2>Contact</h2>
-                <p>Interested? Please contact me and I'll get back to you asap.</p>
-                <!-- <ul class="list-inline banner-social-buttons">
-                    <li class="list-inline-item">
-                        <a href="https://github.com/devas" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                </ul> -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section 2 -->
-    <section id="contact" class="contact">
-        <div class="container">
+        <!-- Skills Section -->
+        <section id="skills" class="container content-section text-center">
             <div class="row">
-                <form action="https://formspree.io/azieba255@gmail.com" method="POST" class="col-md-7">
-                    <div class="row">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form">
-                                    <i class="fa fa-user prefix"></i>
-                                    <label for="name-field">Your name</label>
-                                    <input type="text" name="name" id="name-field" class="form-control validate" required="true">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="md-form">
-                                    <i class="fa fa-envelope prefix"></i>
-                                    <label for="email-field" data-error="Correct!" data-success="Incorrect!">Your email</label>
-                                    <input type="email" name="email" id="email-field" class="form-control validate" required="true">
-                                </div>
-                            </div>
+                <div class="col-lg-8 offset-md-2">
+                    <h2>Skills</h2>
+                    <p>Most experienced with:<br>
+                        Java, C++, OOP, IntelliJ, Visual Studio, Windows<br><br>
+                        Some experience with:<br>
+                        MS SQL, MySQL, C#, Python, Git, Gradle, Spring, HTMTL, CSS<br>
+                        Design patterns, Eclipse, Linux<br><br>
+                        English (B2), German (A2)<br>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Download Section -->
+            <section id="download" class="content-section text-center">
+                <div class="download-section">
+                    <div class="container">
+                        <div class="col-lg-8 offset-md-2">
+                            <h2>Download my projects</h2>
+                            <p>Check my GitHub or download my 3D graphics engine built with Java and LWJGL</p>
+                            <ul class="list-inline banner-social-buttons">
+                                <li class="list-inline-item">
+                                    <a href="https://github.com/devas" class="btn btn-default btn-lg">
+                                        <i class="fa fa-github fa-fw"></i><span class="network-name"> Github</span>
+                                    </a>
+                                    <a href="https://github.com/devas/devengine" class="btn btn-default btn-lg">
+                                        <i class="fa fa-code" aria-hidden="true"></i><span class="network-name"> DevEngine</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form">
-                                    <i class="fa fa-comment prefix"></i>
-                                    <label for="textarea-field">Your message</label>
-                                    <div>
-                                        <textarea type="text" name="message" id="textarea-field" class="md-textarea" required="true"></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section 1 -->
+            <section id="contact-text" class="container content-section text-center">
+                <div class="row">
+                    <div class="col-lg-8 offset-md-2">
+                        <h2>Contact</h2>
+                        <p>Interested? Please contact me and I'll get back to you asap.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section 2 -->
+            <section id="contact" class="contact">
+                <div class="container">
+                    <div class="row">
+                        <form action="https://formspree.io/azieba255@gmail.com" method="POST" class="col-md-7">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="md-form">
+                                            <i class="fa fa-user prefix"></i>
+                                            <label for="name-field">Your name</label>
+                                            <input type="text" name="name" id="name-field" class="form-control validate" required="true">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="md-form">
+                                            <i class="fa fa-envelope prefix"></i>
+                                            <label for="email-field" data-error="Correct!" data-success="Incorrect!">Your email</label>
+                                            <input type="email" name="email" id="email-field" class="form-control validate" required="true">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="md-form">
+                                            <i class="fa fa-comment prefix"></i>
+                                            <label for="textarea-field">Your message</label>
+                                            <div>
+                                                <textarea type="text" name="message" id="textarea-field" class="md-textarea" required="true"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-xs-12 text-xs-center">
+                                        <button type="submit" class="btn btn-default btn-lg" enabled><i class="fa fa-pencil"></i> Send</button>
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="col-md-12">
-                                <div class="md-form">
-                                    <div class="g-recaptcha" data-sitekey="6LdHSB0UAAAAANHcWhHmm2uu6PeHp75MUkBOPC3z" data-callback="correctCaptcha"></div>
-                                </div>
-                            </div> -->
-                            <div class="col-lg-5 col-xs-12 text-xs-center">
-                                <button type="submit" name="_next" value="thanks.html" class="btn btn-default btn-lg" enabled><i class="fa fa-pencil"></i>  Send</button>
-                            </div>
+                        </form>
+                        <div class="social-container col-md-5 text-xs-center text-md-center">
+                            <h5 class="main-font h5-responsive font-weight-bold">You can find me also here:</h5>
+                            <a href="https://github.com/devas" target="_blank"><i class="fa fa-github fa-4x"></i></a>
+                            <!-- <a href="https://www.linkedin.com/in/username" target="_blank"><i class="fa fa-linkedin-square fa-4x"></i></a> -->
+                            <h4 class="main-font h4-responsive font-weight-bold"><br>Phone: <a href="tel:732021763" target="_blank">732 021 763</a></h4>
                         </div>
                     </div>
-                </form>
-                <div class="social-container col-md-5 text-xs-center text-md-center">
-                    <h5 class="main-font h5-responsive font-weight-bold">You can find me also here:</h5>
-                    <a href="https://github.com/devas" target="_blank"><i class="fa fa-github fa-4x"></i></a>
-                    <!-- <a href="https://www.linkedin.com/in/username" target="_blank"><i class="fa fa-linkedin-square fa-4x"></i></a> -->
-                    <h4 class="main-font h4-responsive font-weight-bold"><br>Phone: <a href="tel:732021763" target="_blank">732 021 763</a></h4>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Arkadiusz Zięba 2017</p>
-        </div>
-    </footer>
+            <!-- Footer -->
+            <footer>
+                <div class="container text-center">
+                    <p>Copyright &copy; Arkadiusz Zięba 2017</p>
+                </div>
+            </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/tether/tether.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+            <!-- Bootstrap core JavaScript -->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/tether/tether.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+            <!-- Plugin JavaScript -->
+            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
+            <!-- Custom scripts for this template -->
+            <script src="js/grayscale.min.js"></script>
 
-    <!-- Captcha -->
-    <!-- <script>
-        var correctCaptcha = function(response) {
-            if(response.length!=0){
-                $('button').prop('disabled', false);
-            }};
-    </script> -->
+        </body>
 
-</body>
-
-</html>
+        </html>
